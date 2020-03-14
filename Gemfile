@@ -6,7 +6,11 @@ ruby '2.5.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+#gem 'sqlite3', '~> 1.4'
+
+# Use postgres as the database for Active Record
+gem 'pg'
+
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 
@@ -23,6 +27,9 @@ gem 'graphql', '~> 1.9', '>= 1.9.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+
+# Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file
+gem "figaro"
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
