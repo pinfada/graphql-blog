@@ -15,6 +15,7 @@ gem 'pg'
 gem 'puma', '~> 4.1'
 
 gem 'graphql', '~> 1.9', '>= 1.9.7'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
@@ -30,6 +31,12 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file
 gem "figaro"
+
+# GraphQL interface on top of the Devise Token Auth (DTA) gem.
+gem 'graphql_devise'
+gem 'graphiql-rails'
+
+gem 'factory_bot'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'

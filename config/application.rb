@@ -12,7 +12,9 @@ require "action_mailbox/engine"
 require "action_text/engine"
 require "action_view/railtie"
 require "action_cable/engine"
-# require "sprockets/railtie"
+# API mode there's no concept of an asset pipeline in play
+# Visiting the GraphiQL path without uncomment would result in an error
+require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
