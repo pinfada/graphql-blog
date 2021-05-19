@@ -12,7 +12,7 @@ gem 'rails', '~> 6.0.1'
 gem 'pg'
 
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3'
 
 gem 'graphql', '~> 1.9', '>= 1.9.7'
 
